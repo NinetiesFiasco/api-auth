@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/axios', async (req, res) => {
-  const response = await axios.get('http://localhost:3500/express2/axios')
+  const response = await axios.get('http://gateway:3500/express2/axios')
   res.send(`Let's work Express 1 + ${response.data} - worked!`)
 })
 

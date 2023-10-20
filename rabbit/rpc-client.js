@@ -1,7 +1,7 @@
 const amqp = require('amqplib')
 const crypto = require('crypto')
 
-const RABBIT_MQ_URL =  'amqp://localhost'
+const RABBIT_MQ_URL =  'amqp://rabbitmq'
 const RPC_QUEUE = 'rpc_queue'
 
 module.exports = async function(message) {
